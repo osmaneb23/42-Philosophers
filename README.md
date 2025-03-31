@@ -118,9 +118,9 @@ make
 ```
 42-Philosophers/
 │── includes/
-│   └── philosophers.h      # Main header file with structs and prototypes
+│   └── philosophers.h     # Main header file with structs and prototypes
 │── src/
-│   │── cleaning.c          # Memory cleanup and resource freeing
+│   │── cleaning.c         # Memory cleanup and resource freeing
 │   │── forks.c            # Fork management and synchronization
 │   │── init.c             # Initialization of philosophers and mutexes
 │   │── main.c             # Program entry point and argument handling
