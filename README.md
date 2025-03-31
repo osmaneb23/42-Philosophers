@@ -2,9 +2,13 @@
 
 Welcome to my **Philosophers** repository! This project is part of the **42 curriculum**, where I implemented the classic dining philosophers problem using threads and mutexes. This project deepened my understanding of concurrency, resource sharing, and synchronization in multi-threaded applications.
 
+---
+
 ## **✅ Project Validation**
 - **Validated on:** October 16, 2024
 - **Final Score:** 100/100
+
+---
 
 ## **📜 Project Overview**
 The goal of this project was to solve the dining philosophers problem - a classic synchronization challenge that illustrates the complexities of resource allocation and deadlock prevention in concurrent systems.
@@ -35,6 +39,8 @@ The goal of this project was to solve the dining philosophers problem - a classi
 4. `time_to_sleep`: Milliseconds a philosopher spends sleeping
 5. `[number_of_times_each_philosopher_must_eat]`: Optional argument - if all philosophers eat this many times, the simulation stops
 
+---
+
 ## **🛠️ Implementation Details**
 
 ### **🧵 Multi-threading Approach**
@@ -62,12 +68,14 @@ Implemented a key strategy to prevent deadlocks:
 - Odd-numbered philosophers attempt to pick up left fork first
 - This breaks the circular wait condition, a necessary condition for deadlocks
 
+---
+
 ## **📋 Compilation and Usage**
 
 ### **🔨 Compilation**
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/osmaneb23/42-Philosophers.git
 cd 42-Philosophers
 
 # Compile the program
@@ -104,6 +112,8 @@ make
 ...
 ```
 
+---
+
 ## **📂 Project Structure**
 ```
 42-Philosophers/
@@ -111,15 +121,17 @@ make
 │   └── philosophers.h      # Main header file with structs and prototypes
 │── src/
 │   │── cleaning.c          # Memory cleanup and resource freeing
-│   │── forks.c             # Fork management and synchronization
-│   │── init.c              # Initialization of philosophers and mutexes
-│   │── main.c              # Program entry point and argument handling
-│   │── routine.c           # Main philosopher lifecycle routines
-│   │── routine_utils.c     # Helper functions for philosopher routines
-│   │── utils.c             # General utility functions
-│   └── utils2.c            # Additional utility functions
-└── Makefile                # Compilation instructions
+│   │── forks.c            # Fork management and synchronization
+│   │── init.c             # Initialization of philosophers and mutexes
+│   │── main.c             # Program entry point and argument handling
+│   │── routine.c          # Main philosopher lifecycle routines
+│   │── routine_utils.c    # Helper functions for philosopher routines
+│   │── utils.c            # General utility functions
+│   └── utils2.c           # Additional utility functions
+└── Makefile               # Compilation instructions
 ```
+
+---
 
 ## **🧩 Key Challenges**
 - **Race Conditions**: Ensuring thread-safe access to shared resources
@@ -127,6 +139,8 @@ make
 - **Starvation**: Ensuring all philosophers get fair access to forks
 - **Timing Precision**: Accurate tracking of eating, sleeping, and dying times
 - **Resource Management**: Proper initialization and cleanup of threads and mutexes
+
+---
 
 ## **🎓 Key Learning Outcomes**
 - **Concurrency**: Deep understanding of multi-threading and parallel execution
