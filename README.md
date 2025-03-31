@@ -98,17 +98,20 @@ make
 
 ### **Expected Output:**
 ```
-0 1 has taken a fork
-0 1 has taken a fork
-0 1 is eating
-0 3 has taken a fork
-0 3 has taken a fork
-0 3 is eating
-200 1 is sleeping
-200 3 is sleeping
-200 5 has taken a fork
-200 5 has taken a fork
-200 5 is eating
+0 | Philosopher 1 has taken a fork
+0 | Philosopher 1 has taken a fork
+0 | Philosopher 1 is eating
+0 | Philosopher 2 has taken a fork
+200 | Philosopher 4 has taken a fork
+200 | Philosopher 4 has taken a fork
+200 | Philosopher 4 is eating
+200 | Philosopher 1 is sleeping
+200 | Philosopher 2 has taken a fork
+200 | Philosopher 2 is eating
+400 | Philosopher 1 is thinking
+400 | Philosopher 1 has taken a fork
+400 | Philosopher 3 has taken a fork
+400 | Philosopher 4 is sleeping
 ...
 ```
 
